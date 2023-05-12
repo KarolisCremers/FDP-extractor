@@ -1,0 +1,51 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix ns1: <http://semanticscience.org/resource/> .
+@prefix ns2: <https://w3id.org/fdp/fdp-o#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://fdp.lumc.nl/distribution/> a ldp:DirectContainer ;
+    dcterms:title "Distributions" ;
+    ldp:hasMemberRelation dcat:distribution ;
+    ldp:membershipResource <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9> .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9> a dcat:Dataset,
+        dcat:Resource ;
+    rdfs:label "Blood cell counts nonagerian siblings" ;
+    dcterms:accessRights <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> ;
+    dcterms:hasVersion "tbd" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72> ;
+    dcterms:issued "2006-02-28T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Leiden University Medical Center" ] ;
+    dcterms:title "Blood cell counts nonagerian siblings" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:contactPoint <https://dw.clinicalresearch.nl/pub/contact> ;
+    dcat:landingPage <https://dw.clinicalresearch.nl/pub/dataset/cellcounts> ;
+    dcat:theme <https://www.wikidata.org/wiki/Q21169053>,
+        <https://www.wikidata.org/wiki/Q211709> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9#identifier> ;
+    ns2:metadataIssued "2023-03-17T12:53:01.711593+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-03-17T12:53:01.711593+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9" .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> rdfs:label "Dataset Profile" .
+

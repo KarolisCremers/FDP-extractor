@@ -1,0 +1,678 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix ns1: <http://www.re3data.org/schema/3-0#> .
+@prefix ns11: <http://semanticscience.org/resource/> .
+@prefix ns2: <https://w3id.org/fdp/fdp-o#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://fdp.lumc.nl/catalog/> a ldp:DirectContainer ;
+    dcterms:title "Catalogs" ;
+    ldp:contains <https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291>,
+        <https://fdp.lumc.nl/catalog/3533282f-a4c3-41a0-ae4a-e0ffa8129c73>,
+        <https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a>,
+        <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72>,
+        <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916>,
+        <https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4>,
+        <https://fdp.lumc.nl/catalog/7b30c389-8b55-4ae4-a71f-a12477acc62a>,
+        <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e>,
+        <https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7> ;
+    ldp:hasMemberRelation ns1:dataCatalog,
+        ns2:metadataCatalog ;
+    ldp:membershipResource <https://fdp.lumc.nl> .
+
+<https://fdp.lumc.nl/dataset/> a ldp:DirectContainer ;
+    dcterms:title "Datasets" ;
+    ldp:contains <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3>,
+        <https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42>,
+        <https://fdp.lumc.nl/dataset/7f18bfc8-0f75-4f77-a5cc-2bcd7733bcdf>,
+        <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a>,
+        <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b>,
+        <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9> ;
+    ldp:hasMemberRelation dcat:dataset ;
+    ldp:membershipResource <https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291>,
+        <https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a>,
+        <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72>,
+        <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916>,
+        <https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4>,
+        <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e>,
+        <https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7> .
+
+<https://fdp.lumc.nl/distribution/> a ldp:DirectContainer ;
+    dcterms:title "Distributions" ;
+    ldp:contains <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887>,
+        <https://fdp.lumc.nl/distribution/0f46cc92-4eff-473b-9900-9269cfcc6f29>,
+        <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6>,
+        <https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7> ;
+    ldp:hasMemberRelation dcat:distribution ;
+    ldp:membershipResource <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3>,
+        <https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42>,
+        <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a>,
+        <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b>,
+        <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9> .
+
+<https://fdp.lumc.nl#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl#publisher> a foaf:Agent ;
+    foaf:name "Default Publisher" .
+
+<https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291" .
+
+<https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a" .
+
+<https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72" .
+
+<https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916" .
+
+<https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4" .
+
+<https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e" .
+
+<https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7" .
+
+<https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3" .
+
+<https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42" .
+
+<https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a" .
+
+<https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b" .
+
+<https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9" .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887" .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/distribution/0f46cc92-4eff-473b-9900-9269cfcc6f29#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/distribution/0f46cc92-4eff-473b-9900-9269cfcc6f29#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/distribution/0f46cc92-4eff-473b-9900-9269cfcc6f29" .
+
+<https://fdp.lumc.nl/distribution/0f46cc92-4eff-473b-9900-9269cfcc6f29/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/distribution/0f46cc92-4eff-473b-9900-9269cfcc6f29/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6" .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7" .
+
+<https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/metrics/445c0a70d1e214e545b261559e2842f4> ns11:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns11:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns11:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns11:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c> rdfs:label "FAIR Data Point Profile" .
+
+<https://fdp.lumc.nl#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl" .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887> a dcat:Distribution,
+        dcat:Resource ;
+    rdfs:label "SPARQL distribution of crf" ;
+    dcterms:accessRights <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> ;
+    dcterms:description "SPARQL distribution of crf dataset. To access content of this triple store please use SPARQL query language." ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:title "SPARQL distribution of crf" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:accessURL <https://sparql.lumc.nl:8443/repositories/crf> ;
+    dcat:mediaType "text/turtle" ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887#identifier> ;
+    ns2:metadataIssued "2020-08-28T08:34:21.280000+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2020-10-13T13:30:38.023000+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/distribution/0f46cc92-4eff-473b-9900-9269cfcc6f29> a dcat:Distribution,
+        dcat:Resource ;
+    rdfs:label "SPARQL distribution " ;
+    dcterms:accessRights <https://fdp.lumc.nl/distribution/0f46cc92-4eff-473b-9900-9269cfcc6f29#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:rights <https://lumc.nl> ;
+    dcterms:title "SPARQL distribution " ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/distribution/0f46cc92-4eff-473b-9900-9269cfcc6f29/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/distribution/0f46cc92-4eff-473b-9900-9269cfcc6f29/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:accessURL <https://sparql.lumc.nl/repositories/TWOC-synthetic-data> ;
+    dcat:mediaType "application/sparql-results+json" ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/distribution/0f46cc92-4eff-473b-9900-9269cfcc6f29#identifier> ;
+    ns2:metadataIssued "2021-04-09T10:48:57.863000+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2021-07-19T09:52:50.583571+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6> a dcat:Distribution,
+        dcat:Resource ;
+    rdfs:label "CRF Wizzard" ;
+    dcterms:accessRights <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> ;
+    dcterms:description "Login access needed to access the data." ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:rights <https://www.lumc.nl/> ;
+    dcterms:title "CRF Wizzard" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:accessURL <https://dsw.lumc.nl/crfs/detail/d9f39aaa-1640-4dac-96d4-ce18ab4f5768> ;
+    dcat:mediaType "text/htm" ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6#identifier> ;
+    ns2:metadataIssued "2020-10-13T13:34:56.435000+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2020-10-13T13:36:59.655000+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7> a dcat:Distribution,
+        dcat:Resource ;
+    rdfs:label "zenodo subset" ;
+    dcterms:accessRights <https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> ;
+    dcterms:hasVersion "0.0.1" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Andra Waagmeester" ] ;
+    dcterms:title "zenodo subset" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:downloadURL <https://zenodo.org/record/7382639/files/GeneWiki_wikidata-20180115-all.ttl.gz> ;
+    dcat:mediaType "Turtle" ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7#identifier> ;
+    ns2:metadataIssued "2023-02-24T14:43:04.645928+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-02-24T14:43:04.645928+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291> a dcat:Catalog,
+        dcat:Resource ;
+    rdfs:label "BENEFIT for all; the ecosystem for healthy living" ;
+    dcterms:accessRights <https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> ;
+    dcterms:description "The BENEFIT program aims to provide long-term support to patients with cardiovascular disease (CVD) in their own home with a healthy lifestyle. Core of the BENEFIT program is access to an advanced eHealth platform with Personal Health Portal consisting of functionality for daily goal monitoring, access to (evidence-based) lifestyle interventions, personal coaching and a reward program aimed at stimulating a wide range of health behaviours and therapy adherence. This integrated healthy living program makes it possible to tailor lifestyle interventions to the needs and preferences of end users, encouraging engagement and active use. The program also promotes self-management of a healthy lifestyle by encouraging patients to measure health indicators (such as blood pressure) themselves at home. " ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl> ;
+    dcterms:issued "2022-07-01T07:05:27.721503+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:modified "2022-07-01T07:05:27.721503+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Erik Flikkenschild" ] ;
+    dcterms:title "BENEFIT for all; the ecosystem for healthy living" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291#identifier> ;
+    ns2:metadataIssued "2022-07-01T07:05:27.721503+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2022-07-01T07:05:27.721503+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a> a dcat:Catalog,
+        dcat:Resource ;
+    rdfs:label "Wikimedia Stack" ;
+    dcterms:accessRights <https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> ;
+    dcterms:description "The linked-data repository of the Wikimedia Foundation" ;
+    dcterms:hasVersion "2023-03" ;
+    dcterms:isPartOf <https://fdp.lumc.nl> ;
+    dcterms:issued "2023-03-24T10:52:42.880024+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:modified "2023-03-24T10:52:42.880024+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Wikimedia Foundation" ] ;
+    dcterms:title "Wikimedia Stack" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:themeTaxonomy <http://www.wikidata.org/entity/Q1> ;
+    foaf:homePage <https://www.wikidata.org> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a#identifier> ;
+    ns2:metadataIssued "2023-03-24T10:52:42.880024+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-03-24T11:04:02.811409+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7> a dcat:Catalog,
+        dcat:Resource ;
+    rdfs:label "NL COVID " ;
+    dcterms:accessRights <https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> ;
+    dcterms:description "NFU / ZonMw / COCON" ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl> ;
+    dcterms:issued "2020-10-14T12:46:32.838000+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:modified "2021-04-09T10:42:32.556000+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:rights <https://lumc.nl> ;
+    dcterms:title "NL COVID " ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    foaf:homePage <https://lumc.nl> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7#identifier> ;
+    ns2:metadataIssued "2020-10-14T12:46:32.838000+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2021-04-09T10:42:32.556000+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a> a dcat:Dataset,
+        dcat:Resource ;
+    rdfs:label "Demography" ;
+    dcterms:accessRights <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> ;
+    dcterms:description "For the Leiden Longevity Study, long-lived siblings of European descent were recruited together with their offspring and the partners of the offspring between 2002 and 2006. Families were recruited if at least two long-lived siblings were alive and fulfilled the age criterion of 89 years or older for males and 91 years or older for females, representing less than 0.5% of the Dutch population in 2001 (Schoenmaker et al 2006, doi: 10.1038/sj.ejhg.5201508; Westendorp et al 2009, doi: 10.1111/j.1532-5415.2009.02381.x). In total 944 long-lived siblings were included with a mean age of 94 years (range 89-104), 1671 offspring (61 years, 34-81) and 744 partners (60 years, 30-79). It is family based study consists of 1671 offspring of 421 nonagenarians sibling pairs of Dutch descent, and their 744 partners. The dataset of the LLS IOP1 Nonagenarian Siblings consists of 944 long-lived siblings from 421 families of whom we have biosamples, biomarkers, and questionnaire data. We followed these nonagenarian participants for their vital status till 2020." ;
+    dcterms:hasVersion "TBD" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72> ;
+    dcterms:language <http://www.wikidata.org/entity/Q1860> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Leiden University Medical Center" ] ;
+    dcterms:title "Demography" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:contactPoint <https://dw.clinicalresearch.nl/pub/contact> ;
+    dcat:keyword "date of death",
+        "demography",
+        "nonagenarian" ;
+    dcat:landingPage <https://dw.clinicalresearch.nl/pub/dataset/demography> ;
+    dcat:theme <http://www.wikidata.org/entity/Q18748141>,
+        <http://www.wikidata.org/entity/Q21169053>,
+        <http://www.wikidata.org/entity/Q37732>,
+        <http://www.wikidata.org/entity/Q50379085> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a#identifier> ;
+    ns2:metadataIssued "2023-03-17T12:55:24.137764+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-03-20T15:27:59.295894+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9> a dcat:Dataset,
+        dcat:Resource ;
+    rdfs:label "Blood cell counts nonagerian siblings" ;
+    dcterms:accessRights <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> ;
+    dcterms:hasVersion "tbd" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72> ;
+    dcterms:issued "2006-02-28T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Leiden University Medical Center" ] ;
+    dcterms:title "Blood cell counts nonagerian siblings" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:contactPoint <https://dw.clinicalresearch.nl/pub/contact> ;
+    dcat:landingPage <https://dw.clinicalresearch.nl/pub/dataset/cellcounts> ;
+    dcat:theme <https://www.wikidata.org/wiki/Q21169053>,
+        <https://www.wikidata.org/wiki/Q211709> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9#identifier> ;
+    ns2:metadataIssued "2023-03-17T12:53:01.711593+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-03-17T12:53:01.711593+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916> a dcat:Catalog,
+        dcat:Resource ;
+    rdfs:label "Wikidata" ;
+    dcterms:accessRights <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> ;
+    dcterms:description "Wikidata is the generic public data point from the Wikimedia Foundation" ;
+    dcterms:hasVersion "0.0.1" ;
+    dcterms:isPartOf <https://fdp.lumc.nl> ;
+    dcterms:issued "2023-02-24T14:26:28.669262+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:modified "2023-02-24T14:26:28.669262+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Wikimedia Foundation" ] ;
+    dcterms:title "Wikidata" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:dataset <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3> ;
+    dcat:themeTaxonomy <http://www.wikidata.org/entity/Q7187> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916#identifier> ;
+    ns2:metadataIssued "2023-02-24T14:26:28.669262+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-02-24T14:43:05.047719+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4> a dcat:Catalog,
+        dcat:Resource ;
+    rdfs:label "Datasets" ;
+    dcterms:accessRights <https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl> ;
+    dcterms:issued "2021-04-09T10:43:43.018000+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:modified "2021-05-19T10:14:47.906788+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:rights <https://lumc.nl> ;
+    dcterms:title "TWOC COVID-19" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:dataset <https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42> ;
+    dcat:themeTaxonomy <http://www.wikidata.org/entity/Q7662746>,
+        <http://www.wikidata.org/entity/Q84263196> ;
+    foaf:homePage <https://lumc.nl> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4#identifier> ;
+    ns2:metadataIssued "2021-04-09T10:43:43.018000+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2021-07-19T09:52:50.886025+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e> a dcat:Catalog,
+        dcat:Resource ;
+    rdfs:label "VODAN Go FAIR" ;
+    dcterms:accessRights <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> ;
+    dcterms:description """Virus Outbreak Data Network (VODAN)
+The VODAN Implementation Network is one of the joint activities carried out by CODATA, RDA, WDS, and GO FAIR.""" ;
+    dcterms:hasVersion "1.1" ;
+    dcterms:isPartOf <https://fdp.lumc.nl> ;
+    dcterms:issued "2020-08-28T08:22:29.667000+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:modified "2020-10-13T13:27:45.401000+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:rights <https://www.lumc.nl/> ;
+    dcterms:title "VODAN Go FAIR" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:dataset <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b> ;
+    dcat:themeTaxonomy <https://www.wikidata.org/wiki/Q1046976>,
+        <https://www.wikidata.org/wiki/Q84263196> ;
+    foaf:homePage <https://www.lumc.nl/> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e#identifier> ;
+    ns2:metadataIssued "2020-08-28T08:22:29.667000+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2020-10-13T13:36:59.929000+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3> a dcat:Dataset,
+        dcat:Resource ;
+    rdfs:label "genewiki subset" ;
+    dcterms:accessRights <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> ;
+    dcterms:hasVersion "0.0.1" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Zenodo" ] ;
+    dcterms:title "genewiki subset" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:distribution <https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7> ;
+    dcat:landingPage <https://zenodo.org/record/7382639#.Y_jJUuzML68> ;
+    dcat:theme <http://www.wikidata.org/entity/Q7187> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3#identifier> ;
+    ns2:metadataIssued "2023-02-24T14:41:42.903842+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-02-24T14:43:04.885845+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42> a dcat:Dataset,
+        dcat:Resource ;
+    rdfs:label " Synthetic Data " ;
+    dcterms:accessRights <https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:rights <https://lumc.nl> ;
+    dcterms:title " Synthetic Data " ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:contactPoint <https://lumc.nl> ;
+    dcat:distribution <https://fdp.lumc.nl/distribution/0f46cc92-4eff-473b-9900-9269cfcc6f29> ;
+    dcat:keyword "COVID-19",
+        "Synthetic data" ;
+    dcat:theme <http://www.wikidata.org/entity/Q7662746>,
+        <http://www.wikidata.org/entity/Q84263196> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/dataset/7be033d7-7f32-43ae-bd1a-1962203d5a42#identifier> ;
+    ns2:metadataIssued "2021-04-09T10:47:08.532000+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2021-07-19T09:52:50.778098+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> rdfs:label "Distribution Profile" .
+
+<https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72> a dcat:Catalog,
+        dcat:Resource ;
+    rdfs:label "Leiden Longevity Study catalog" ;
+    dcterms:accessRights <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> ;
+    dcterms:description "Catalog of datasets from the Leiden Longevity Study (LLS). LLS is a cohort study of which the first recruitment round was between 2002 and 2006. For all 3,359 study participants there are data on 1) biomaterials, 2) demography, 3) medical history, 4) self-reported surveys. Moreover, varying subsets of the recruited participants participated in follow-up rounds 2 (2006-2008) and 3 (2009-2010) in which additional and longitudinal data were collected." ;
+    dcterms:hasVersion "0.1" ;
+    dcterms:isPartOf <https://fdp.lumc.nl> ;
+    dcterms:issued "2023-03-17T09:35:23.642074+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://www.wikidata.org/entity/Q6905323> ;
+    dcterms:modified "2023-03-20T15:27:30.250957+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Leiden Center Medical Center" ] ;
+    dcterms:rights <http://purl.org/coar/access_right/c_14cb> ;
+    dcterms:title "Leiden Longevity Study catalog" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:dataset <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a>,
+        <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9> ;
+    dcat:themeTaxonomy <http://www.wikidata.org/entity/Q18748141>,
+        <http://www.wikidata.org/entity/Q21169053>,
+        <http://www.wikidata.org/entity/Q37732>,
+        <http://www.wikidata.org/entity/Q50379085>,
+        <https://www.wikidata.org/wiki/Q21169053>,
+        <https://www.wikidata.org/wiki/Q211709> ;
+    foaf:homePage <https://dw.clinicalresearch.nl/pub/study/lls> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72#identifier> ;
+    ns2:metadataIssued "2023-03-17T09:35:23.642074+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-03-20T15:27:59.443189+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b> a dcat:Dataset,
+        dcat:Resource ;
+    rdfs:label "COVID crf" ;
+    dcterms:accessRights <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> ;
+    dcterms:description "An exemple dataset of COVID's case report form " ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:title "COVID crf" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:distribution <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887>,
+        <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6> ;
+    dcat:keyword "case report form (ecrf)",
+        "covid" ;
+    dcat:theme <https://www.wikidata.org/wiki/Q1046976>,
+        <https://www.wikidata.org/wiki/Q84263196> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b#identifier> ;
+    ns2:metadataIssued "2020-08-28T08:30:05.627000+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2020-10-13T13:36:59.821000+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> rdfs:label "Dataset Profile" .
+
+<https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> rdfs:label "Catalog Profile" .
+
+<https://fdp.lumc.nl> a dcat:DataService,
+        dcat:Resource,
+        ns2:FAIRDataPoint,
+        ns2:MetadataService ;
+    rdfs:label "LUMC FAIR Data Point" ;
+    dcterms:accessRights <https://fdp.lumc.nl#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c> ;
+    dcterms:description "This FAIR Data Point contains the metadata of datasets and other artefacts related to the COVID-19 pandemic and other health data in the Leiden University Medical Center. " ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher <https://fdp.lumc.nl#publisher> ;
+    dcterms:title "LUMC FAIR Data Point" ;
+    ns11:SIO_000628 <https://fdp.lumc.nl/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    ns1:repositoryIdentifier <https://fdp.lumc.nl#identifier> ;
+    dcat:endpointURL <https://fdp.lumc.nl> ;
+    ns2:fdpSoftwareVersion "FDP:v1.15.0~609a912" ;
+    ns2:metadataCatalog <https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291>,
+        <https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a>,
+        <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72>,
+        <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916>,
+        <https://fdp.lumc.nl/catalog/576ffd7e-6fb3-424a-8393-1ab9c86100b4>,
+        <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e>,
+        <https://fdp.lumc.nl/catalog/bda4f81c-bb45-4507-86a1-d30ecb4a00b7> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl#identifier> ;
+    ns2:metadataIssued "2020-08-28T07:04:05.986000+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-03-26T14:27:58.819501+00:00"^^xsd:dateTime .
+

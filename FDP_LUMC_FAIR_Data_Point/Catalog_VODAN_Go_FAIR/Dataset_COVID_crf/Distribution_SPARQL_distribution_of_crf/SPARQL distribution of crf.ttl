@@ -1,0 +1,43 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <https://w3id.org/fdp/fdp-o#> .
+@prefix ns2: <http://semanticscience.org/resource/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887> a dcat:Distribution,
+        dcat:Resource ;
+    rdfs:label "SPARQL distribution of crf" ;
+    dcterms:accessRights <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> ;
+    dcterms:description "SPARQL distribution of crf dataset. To access content of this triple store please use SPARQL query language." ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:title "SPARQL distribution of crf" ;
+    ns2:SIO_000628 <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:accessURL <https://sparql.lumc.nl:8443/repositories/crf> ;
+    dcat:mediaType "text/turtle" ;
+    ns1:metadataIdentifier <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887#identifier> ;
+    ns1:metadataIssued "2020-08-28T08:34:21.280000+00:00"^^xsd:dateTime ;
+    ns1:metadataModified "2020-10-13T13:30:38.023000+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887" .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887/metrics/445c0a70d1e214e545b261559e2842f4> ns2:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns2:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns2:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns2:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> rdfs:label "Distribution Profile" .
+

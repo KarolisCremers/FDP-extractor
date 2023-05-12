@@ -1,0 +1,127 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix ns1: <http://semanticscience.org/resource/> .
+@prefix ns2: <https://w3id.org/fdp/fdp-o#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://fdp.lumc.nl/dataset/> a ldp:DirectContainer ;
+    dcterms:title "Datasets" ;
+    ldp:contains <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3> ;
+    ldp:hasMemberRelation dcat:dataset ;
+    ldp:membershipResource <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916> .
+
+<https://fdp.lumc.nl/distribution/> a ldp:DirectContainer ;
+    dcterms:title "Distributions" ;
+    ldp:contains <https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7> ;
+    ldp:hasMemberRelation dcat:distribution ;
+    ldp:membershipResource <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3> .
+
+<https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916" .
+
+<https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3" .
+
+<https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7" .
+
+<https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> rdfs:label "Distribution Profile" .
+
+<https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> rdfs:label "Dataset Profile" .
+
+<https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> rdfs:label "Catalog Profile" .
+
+<https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916> a dcat:Catalog,
+        dcat:Resource ;
+    rdfs:label "Wikidata" ;
+    dcterms:accessRights <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> ;
+    dcterms:description "Wikidata is the generic public data point from the Wikimedia Foundation" ;
+    dcterms:hasVersion "0.0.1" ;
+    dcterms:isPartOf <https://fdp.lumc.nl> ;
+    dcterms:issued "2023-02-24T14:26:28.669262+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:modified "2023-02-24T14:26:28.669262+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Wikimedia Foundation" ] ;
+    dcterms:title "Wikidata" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:dataset <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3> ;
+    dcat:themeTaxonomy <http://www.wikidata.org/entity/Q7187> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916#identifier> ;
+    ns2:metadataIssued "2023-02-24T14:26:28.669262+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-02-24T14:43:05.047719+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7> a dcat:Distribution,
+        dcat:Resource ;
+    rdfs:label "zenodo subset" ;
+    dcterms:accessRights <https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> ;
+    dcterms:hasVersion "0.0.1" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Andra Waagmeester" ] ;
+    dcterms:title "zenodo subset" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:downloadURL <https://zenodo.org/record/7382639/files/GeneWiki_wikidata-20180115-all.ttl.gz> ;
+    dcat:mediaType "Turtle" ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7#identifier> ;
+    ns2:metadataIssued "2023-02-24T14:43:04.645928+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-02-24T14:43:04.645928+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3> a dcat:Dataset,
+        dcat:Resource ;
+    rdfs:label "genewiki subset" ;
+    dcterms:accessRights <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> ;
+    dcterms:hasVersion "0.0.1" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/catalog/4f80641f-4296-43b3-8eb3-2788753fd916> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Zenodo" ] ;
+    dcterms:title "genewiki subset" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:distribution <https://fdp.lumc.nl/distribution/7115f651-aba2-4e8a-a0b2-7f30d4b320a7> ;
+    dcat:landingPage <https://zenodo.org/record/7382639#.Y_jJUuzML68> ;
+    dcat:theme <http://www.wikidata.org/entity/Q7187> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/dataset/50e2b25b-59c9-4027-9a39-9c83be7c61f3#identifier> ;
+    ns2:metadataIssued "2023-02-24T14:41:42.903842+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-02-24T14:43:04.885845+00:00"^^xsd:dateTime .
+

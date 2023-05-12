@@ -1,0 +1,171 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix ns1: <http://semanticscience.org/resource/> .
+@prefix ns21: <https://w3id.org/fdp/fdp-o#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://fdp.lumc.nl/dataset/> a ldp:DirectContainer ;
+    dcterms:title "Datasets" ;
+    ldp:contains <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b> ;
+    ldp:hasMemberRelation dcat:dataset ;
+    ldp:membershipResource <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e> .
+
+<https://fdp.lumc.nl/distribution/> a ldp:DirectContainer ;
+    dcterms:title "Distributions" ;
+    ldp:contains <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887>,
+        <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6> ;
+    ldp:hasMemberRelation dcat:distribution ;
+    ldp:membershipResource <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b> .
+
+<https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e" .
+
+<https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b" .
+
+<https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887" .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6" .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> rdfs:label "Dataset Profile" .
+
+<https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> rdfs:label "Catalog Profile" .
+
+<https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e> a dcat:Catalog,
+        dcat:Resource ;
+    rdfs:label "VODAN Go FAIR" ;
+    dcterms:accessRights <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> ;
+    dcterms:description """Virus Outbreak Data Network (VODAN)
+The VODAN Implementation Network is one of the joint activities carried out by CODATA, RDA, WDS, and GO FAIR.""" ;
+    dcterms:hasVersion "1.1" ;
+    dcterms:isPartOf <https://fdp.lumc.nl> ;
+    dcterms:issued "2020-08-28T08:22:29.667000+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:modified "2020-10-13T13:27:45.401000+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:rights <https://www.lumc.nl/> ;
+    dcterms:title "VODAN Go FAIR" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:dataset <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b> ;
+    dcat:themeTaxonomy <https://www.wikidata.org/wiki/Q1046976>,
+        <https://www.wikidata.org/wiki/Q84263196> ;
+    foaf:homePage <https://www.lumc.nl/> ;
+    ns21:metadataIdentifier <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e#identifier> ;
+    ns21:metadataIssued "2020-08-28T08:22:29.667000+00:00"^^xsd:dateTime ;
+    ns21:metadataModified "2020-10-13T13:36:59.929000+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887> a dcat:Distribution,
+        dcat:Resource ;
+    rdfs:label "SPARQL distribution of crf" ;
+    dcterms:accessRights <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> ;
+    dcterms:description "SPARQL distribution of crf dataset. To access content of this triple store please use SPARQL query language." ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:title "SPARQL distribution of crf" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:accessURL <https://sparql.lumc.nl:8443/repositories/crf> ;
+    dcat:mediaType "text/turtle" ;
+    ns21:metadataIdentifier <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887#identifier> ;
+    ns21:metadataIssued "2020-08-28T08:34:21.280000+00:00"^^xsd:dateTime ;
+    ns21:metadataModified "2020-10-13T13:30:38.023000+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6> a dcat:Distribution,
+        dcat:Resource ;
+    rdfs:label "CRF Wizzard" ;
+    dcterms:accessRights <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> ;
+    dcterms:description "Login access needed to access the data." ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:rights <https://www.lumc.nl/> ;
+    dcterms:title "CRF Wizzard" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:accessURL <https://dsw.lumc.nl/crfs/detail/d9f39aaa-1640-4dac-96d4-ce18ab4f5768> ;
+    dcat:mediaType "text/htm" ;
+    ns21:metadataIdentifier <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6#identifier> ;
+    ns21:metadataIssued "2020-10-13T13:34:56.435000+00:00"^^xsd:dateTime ;
+    ns21:metadataModified "2020-10-13T13:36:59.655000+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> rdfs:label "Distribution Profile" .
+
+<https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b> a dcat:Dataset,
+        dcat:Resource ;
+    rdfs:label "COVID crf" ;
+    dcterms:accessRights <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> ;
+    dcterms:description "An exemple dataset of COVID's case report form " ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/catalog/88e1e0e9-bc37-4887-bbd6-1cd2fb92d90e> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:title "COVID crf" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:distribution <https://fdp.lumc.nl/distribution/0ef2157a-60f6-4b5b-8bef-3ba5d23b1887>,
+        <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6> ;
+    dcat:keyword "case report form (ecrf)",
+        "covid" ;
+    dcat:theme <https://www.wikidata.org/wiki/Q1046976>,
+        <https://www.wikidata.org/wiki/Q84263196> ;
+    ns21:metadataIdentifier <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b#identifier> ;
+    ns21:metadataIssued "2020-08-28T08:30:05.627000+00:00"^^xsd:dateTime ;
+    ns21:metadataModified "2020-10-13T13:36:59.821000+00:00"^^xsd:dateTime .
+

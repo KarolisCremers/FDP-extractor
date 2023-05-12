@@ -1,0 +1,49 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix ns1: <https://w3id.org/fdp/fdp-o#> .
+@prefix ns2: <http://semanticscience.org/resource/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://fdp.lumc.nl/dataset/> a ldp:DirectContainer ;
+    dcterms:title "Datasets" ;
+    ldp:hasMemberRelation dcat:dataset ;
+    ldp:membershipResource <https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291> .
+
+<https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291> a dcat:Catalog,
+        dcat:Resource ;
+    rdfs:label "BENEFIT for all; the ecosystem for healthy living" ;
+    dcterms:accessRights <https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> ;
+    dcterms:description "The BENEFIT program aims to provide long-term support to patients with cardiovascular disease (CVD) in their own home with a healthy lifestyle. Core of the BENEFIT program is access to an advanced eHealth platform with Personal Health Portal consisting of functionality for daily goal monitoring, access to (evidence-based) lifestyle interventions, personal coaching and a reward program aimed at stimulating a wide range of health behaviours and therapy adherence. This integrated healthy living program makes it possible to tailor lifestyle interventions to the needs and preferences of end users, encouraging engagement and active use. The program also promotes self-management of a healthy lifestyle by encouraging patients to measure health indicators (such as blood pressure) themselves at home. " ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl> ;
+    dcterms:issued "2022-07-01T07:05:27.721503+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:modified "2022-07-01T07:05:27.721503+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Erik Flikkenschild" ] ;
+    dcterms:title "BENEFIT for all; the ecosystem for healthy living" ;
+    ns2:SIO_000628 <https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    ns1:metadataIdentifier <https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291#identifier> ;
+    ns1:metadataIssued "2022-07-01T07:05:27.721503+00:00"^^xsd:dateTime ;
+    ns1:metadataModified "2022-07-01T07:05:27.721503+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291" .
+
+<https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291/metrics/445c0a70d1e214e545b261559e2842f4> ns2:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns2:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/catalog/2f398bcd-e1ae-4a22-b705-87163e052291/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns2:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns2:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> rdfs:label "Catalog Profile" .
+

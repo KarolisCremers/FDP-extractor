@@ -1,0 +1,52 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix ns1: <http://semanticscience.org/resource/> .
+@prefix ns2: <https://w3id.org/fdp/fdp-o#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://fdp.lumc.nl/dataset/> a ldp:DirectContainer ;
+    dcterms:title "Datasets" ;
+    ldp:contains <https://fdp.lumc.nl/dataset/7f18bfc8-0f75-4f77-a5cc-2bcd7733bcdf> ;
+    ldp:hasMemberRelation dcat:dataset ;
+    ldp:membershipResource <https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a> .
+
+<https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a> a dcat:Catalog,
+        dcat:Resource ;
+    rdfs:label "Wikimedia Stack" ;
+    dcterms:accessRights <https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> ;
+    dcterms:description "The linked-data repository of the Wikimedia Foundation" ;
+    dcterms:hasVersion "2023-03" ;
+    dcterms:isPartOf <https://fdp.lumc.nl> ;
+    dcterms:issued "2023-03-24T10:52:42.880024+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:modified "2023-03-24T10:52:42.880024+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Wikimedia Foundation" ] ;
+    dcterms:title "Wikimedia Stack" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:themeTaxonomy <http://www.wikidata.org/entity/Q1> ;
+    foaf:homePage <https://www.wikidata.org> ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a#identifier> ;
+    ns2:metadataIssued "2023-03-24T10:52:42.880024+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2023-03-24T11:04:02.811409+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a" .
+
+<https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/catalog/3cae88eb-b934-47e3-a895-3001e8c7376a/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> rdfs:label "Catalog Profile" .
+

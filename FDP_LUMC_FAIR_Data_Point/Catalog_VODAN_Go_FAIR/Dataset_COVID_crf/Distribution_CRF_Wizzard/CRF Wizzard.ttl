@@ -1,0 +1,44 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://semanticscience.org/resource/> .
+@prefix ns2: <https://w3id.org/fdp/fdp-o#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6> a dcat:Distribution,
+        dcat:Resource ;
+    rdfs:label "CRF Wizzard" ;
+    dcterms:accessRights <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> ;
+    dcterms:description "Login access needed to access the data." ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/dataset/c8c3dda4-5eab-4a8b-9e1f-9095c01b1e0b> ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "LUMC" ] ;
+    dcterms:rights <https://www.lumc.nl/> ;
+    dcterms:title "CRF Wizzard" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:accessURL <https://dsw.lumc.nl/crfs/detail/d9f39aaa-1640-4dac-96d4-ce18ab4f5768> ;
+    dcat:mediaType "text/htm" ;
+    ns2:metadataIdentifier <https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6#identifier> ;
+    ns2:metadataIssued "2020-10-13T13:34:56.435000+00:00"^^xsd:dateTime ;
+    ns2:metadataModified "2020-10-13T13:36:59.655000+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6" .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/distribution/3b7f8c4c-5443-4a51-93db-39353ee966c6/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/profile/02c649de-c579-43bb-b470-306abdc808c7> rdfs:label "Distribution Profile" .
+

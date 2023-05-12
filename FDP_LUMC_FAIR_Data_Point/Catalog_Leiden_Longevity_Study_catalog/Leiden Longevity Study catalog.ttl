@@ -1,0 +1,144 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix ns1: <http://semanticscience.org/resource/> .
+@prefix ns21: <https://w3id.org/fdp/fdp-o#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://fdp.lumc.nl/dataset/> a ldp:DirectContainer ;
+    dcterms:title "Datasets" ;
+    ldp:contains <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a>,
+        <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9> ;
+    ldp:hasMemberRelation dcat:dataset ;
+    ldp:membershipResource <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72> .
+
+<https://fdp.lumc.nl/distribution/> a ldp:DirectContainer ;
+    dcterms:title "Distributions" ;
+    ldp:hasMemberRelation dcat:distribution ;
+    ldp:membershipResource <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a>,
+        <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9> .
+
+<https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72" .
+
+<https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a" .
+
+<https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9#accessRights> a dcterms:RightsStatement ;
+    dcterms:description "This resource has no access restriction" .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9#identifier> a <http://purl.org/spar/datacite/Identifier> ;
+    dcterms:identifier "https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9" .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9/metrics/445c0a70d1e214e545b261559e2842f4> ns1:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt> ;
+    ns1:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9/metrics/5d27e854a9e78eb3f663331cd47cdc13> ns1:SIO_000332 <https://www.wikidata.org/wiki/Q8777> ;
+    ns1:SIO_000628 <https://www.wikidata.org/wiki/Q8777> .
+
+<https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> rdfs:label "Catalog Profile" .
+
+<https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> rdfs:label "Dataset Profile" .
+
+<https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72> a dcat:Catalog,
+        dcat:Resource ;
+    rdfs:label "Leiden Longevity Study catalog" ;
+    dcterms:accessRights <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/a0949e72-4466-4d53-8900-9436d1049a4b> ;
+    dcterms:description "Catalog of datasets from the Leiden Longevity Study (LLS). LLS is a cohort study of which the first recruitment round was between 2002 and 2006. For all 3,359 study participants there are data on 1) biomaterials, 2) demography, 3) medical history, 4) self-reported surveys. Moreover, varying subsets of the recruited participants participated in follow-up rounds 2 (2006-2008) and 3 (2009-2010) in which additional and longitudinal data were collected." ;
+    dcterms:hasVersion "0.1" ;
+    dcterms:isPartOf <https://fdp.lumc.nl> ;
+    dcterms:issued "2023-03-17T09:35:23.642074+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://www.wikidata.org/entity/Q6905323> ;
+    dcterms:modified "2023-03-20T15:27:30.250957+00:00"^^xsd:dateTime ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Leiden Center Medical Center" ] ;
+    dcterms:rights <http://purl.org/coar/access_right/c_14cb> ;
+    dcterms:title "Leiden Longevity Study catalog" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:dataset <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a>,
+        <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9> ;
+    dcat:themeTaxonomy <http://www.wikidata.org/entity/Q18748141>,
+        <http://www.wikidata.org/entity/Q21169053>,
+        <http://www.wikidata.org/entity/Q37732>,
+        <http://www.wikidata.org/entity/Q50379085>,
+        <https://www.wikidata.org/wiki/Q21169053>,
+        <https://www.wikidata.org/wiki/Q211709> ;
+    foaf:homePage <https://dw.clinicalresearch.nl/pub/study/lls> ;
+    ns21:metadataIdentifier <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72#identifier> ;
+    ns21:metadataIssued "2023-03-17T09:35:23.642074+00:00"^^xsd:dateTime ;
+    ns21:metadataModified "2023-03-20T15:27:59.443189+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a> a dcat:Dataset,
+        dcat:Resource ;
+    rdfs:label "Demography" ;
+    dcterms:accessRights <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> ;
+    dcterms:description "For the Leiden Longevity Study, long-lived siblings of European descent were recruited together with their offspring and the partners of the offspring between 2002 and 2006. Families were recruited if at least two long-lived siblings were alive and fulfilled the age criterion of 89 years or older for males and 91 years or older for females, representing less than 0.5% of the Dutch population in 2001 (Schoenmaker et al 2006, doi: 10.1038/sj.ejhg.5201508; Westendorp et al 2009, doi: 10.1111/j.1532-5415.2009.02381.x). In total 944 long-lived siblings were included with a mean age of 94 years (range 89-104), 1671 offspring (61 years, 34-81) and 744 partners (60 years, 30-79). It is family based study consists of 1671 offspring of 421 nonagenarians sibling pairs of Dutch descent, and their 744 partners. The dataset of the LLS IOP1 Nonagenarian Siblings consists of 944 long-lived siblings from 421 families of whom we have biosamples, biomarkers, and questionnaire data. We followed these nonagenarian participants for their vital status till 2020." ;
+    dcterms:hasVersion "TBD" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72> ;
+    dcterms:language <http://www.wikidata.org/entity/Q1860> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Leiden University Medical Center" ] ;
+    dcterms:title "Demography" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:contactPoint <https://dw.clinicalresearch.nl/pub/contact> ;
+    dcat:keyword "date of death",
+        "demography",
+        "nonagenarian" ;
+    dcat:landingPage <https://dw.clinicalresearch.nl/pub/dataset/demography> ;
+    dcat:theme <http://www.wikidata.org/entity/Q18748141>,
+        <http://www.wikidata.org/entity/Q21169053>,
+        <http://www.wikidata.org/entity/Q37732>,
+        <http://www.wikidata.org/entity/Q50379085> ;
+    ns21:metadataIdentifier <https://fdp.lumc.nl/dataset/b1ee2e2c-2f4c-4fe7-aff6-ece2c501c25a#identifier> ;
+    ns21:metadataIssued "2023-03-17T12:55:24.137764+00:00"^^xsd:dateTime ;
+    ns21:metadataModified "2023-03-20T15:27:59.295894+00:00"^^xsd:dateTime .
+
+<https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9> a dcat:Dataset,
+        dcat:Resource ;
+    rdfs:label "Blood cell counts nonagerian siblings" ;
+    dcterms:accessRights <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9#accessRights> ;
+    dcterms:conformsTo <https://fdp.lumc.nl/profile/2f08228e-1789-40f8-84cd-28e3288c3604> ;
+    dcterms:hasVersion "tbd" ;
+    dcterms:isPartOf <https://fdp.lumc.nl/catalog/3d06ba8c-f2d6-4e56-9ddc-7f40dcee3e72> ;
+    dcterms:issued "2006-02-28T00:00:00+00:00"^^xsd:dateTime ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0> ;
+    dcterms:publisher [ a foaf:Agent ;
+            foaf:name "Leiden University Medical Center" ] ;
+    dcterms:title "Blood cell counts nonagerian siblings" ;
+    ns1:SIO_000628 <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9/metrics/445c0a70d1e214e545b261559e2842f4>,
+        <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9/metrics/5d27e854a9e78eb3f663331cd47cdc13> ;
+    dcat:contactPoint <https://dw.clinicalresearch.nl/pub/contact> ;
+    dcat:landingPage <https://dw.clinicalresearch.nl/pub/dataset/cellcounts> ;
+    dcat:theme <https://www.wikidata.org/wiki/Q21169053>,
+        <https://www.wikidata.org/wiki/Q211709> ;
+    ns21:metadataIdentifier <https://fdp.lumc.nl/dataset/cd22d1cb-ce9e-420b-9a81-faf99d1be0f9#identifier> ;
+    ns21:metadataIssued "2023-03-17T12:53:01.711593+00:00"^^xsd:dateTime ;
+    ns21:metadataModified "2023-03-17T12:53:01.711593+00:00"^^xsd:dateTime .
+
