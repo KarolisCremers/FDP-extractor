@@ -7,6 +7,7 @@ ORCID: https://orcid.org/0000-0002-1756-3905
 import requests
 from rdflib import Graph, URIRef
 import os
+import re
 
 # get relative path:
 cwd = os.getcwd()
@@ -18,7 +19,10 @@ path_dictionary = {'https://w3id.org/fdp/fdp-o#MetadataService': ["not target"],
         "http://www.w3.org/ns/dcat#Dataset":["Dataset","Catalog","FDP"],
         "http://www.w3.org/ns/dcat#Distribution":["Distribution","Dataset","Catalog","FDP"],
         "http://www.w3.org/ns/dcat#Resource": ["not target"],
-        'http://www.w3.org/ns/dcat#DataService':["not target"]}
+        "http://www.w3.org/ns/dcat#DataService":["not target"]}
+
+unimportant = ('https://w3id.org/fdp/fdp-o#MetadataService', "http://www.w3.org/ns/dcat#Resource",
+                  "http://www.w3.org/ns/dcat#DataService", )
 
 def get_title(g, url):
     """
@@ -32,7 +36,7 @@ def get_title(g, url):
     ?url dcterms:title ?o .
     }"""
     qres = g.query(query, initBindings={'url': url})
-    return str(qres.bindings[0]["o"])
+    return re.sub('\W+','', str(qres.bindings[0]["o"])[:20])
 
 
 def write_to_disk(g, url, dirpath):
@@ -63,28 +67,25 @@ def directories(g, url, path):
     # extract the current resource type:
     query = """prefix dcat: <http://www.w3.org/ns/dcat#> 
 SELECT ?value WHERE {
-?url ?property ?value .
-FILTER (isIRI(?value) && (STRSTARTS(STR(?value),
- "http://www.w3.org/ns/dcat#") || STRSTARTS(STR(?value), "https://w3id.org/fdp/fdp-o#")))
+?url a ?value .
 }
     """
     dcat = g.query(query, initBindings={'url': url})
-    resource_type = []
-    for type in dcat:
-        path_sequence = path_dictionary[str(type.value)]
-        if path_sequence[0] != "not target":
-            resource_type = type.value
-            rt = resource_type.split("#")[1]
+    for attribute in dcat:
+        uri = str(attribute[0])
+        # if we're at the FDP level we have to make sure to add the relative path:
+        if uri == "https://w3id.org/fdp/fdp-o#FAIRDataPoint":
+            current_path = os.path.join(cwd, "FDP_" + get_title(g,url).rstrip(" ").replace(" ", "_"))
             break
-    # if we're at the FDP level we have to make sure to add the relative path:
-    if rt == "FAIRDataPoint":
-        current_path = os.path.join(cwd, "FDP_" + get_title(g,url).rstrip(" ").replace(" ", "_"))
-    # otherwise we extend path to include new resource
-    # this path fails if we start from a non FDP url without setting 
-    # a relative path associated with the resource
-    else:
-        dir_name = rt + "_" + get_title(g,url).replace(" ", "_")
-        current_path = os.path.join(path, dir_name)
+            # otherwise we extend path to include new resource
+            # this path fails if we start from a non FDP url without setting 
+            # a relative path associated with the resource
+        if uri not in unimportant:
+            resource_type = uri.split('#')
+            if len(resource_type) < 2:
+                resource_type = uri.split('/')
+            dir_name = resource_type.pop() + "_" + get_title(g,url).replace(" ", "_")
+            current_path = os.path.join(path, dir_name)
     path_exists = os.path.isdir(current_path)
     if not path_exists:
         os.mkdir(current_path)
@@ -131,9 +132,8 @@ FILTER (?p = <http://www.w3.org/ns/ldp#contains>)
     return g
     
 # the official LUMC FDP url:
-graph = traverse_fdp(URIRef('https://fdp.lumc.nl'))
+graph = traverse_fdp(URIRef('https://w3id.org/ejp-rd/fairdatapoints/orphanet-catalog-fdp'))
 
 # write merged graph to turtle file
-graph.serialize(destination="fdp.ttl", format="turtle")
-
+graph.serialize(destination="orpha-fdp.ttl", format="turtle")
 
