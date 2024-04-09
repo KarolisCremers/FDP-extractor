@@ -100,12 +100,13 @@ def traverse_fdp(url, path=str):
     returns: a merged graph containing all resource information available
     in the FDP tree.
     """
-    print("querying: {}".format(str(url)))
+    #print("querying: {}".format(str(url)))
+    url = URIRef(url)
     resp = requests.get(str(url+"/?format=ttl"), params={"format":"ttl"})
     # currently not possible to know if a child resource is draft from the parent
     # so we just jump up when we encounter one:
     if resp.text == "You are not allow to view this record in state DRAFT":
-        print("Draft found, skipping!")
+        #print("Draft found, skipping!")
         return Graph()
     g = Graph()
     # use data= because Graph.parse assumes input to be a filepath at default:
@@ -113,9 +114,9 @@ def traverse_fdp(url, path=str):
     # obtain ldp objects, ldp is used as pointers within the FDP datastructure
     qres = g.query(
     """SELECT ?o WHERE {
-?s ?p ?o .
-FILTER (?p = <http://www.w3.org/ns/ldp#contains>)
-}"""
+        ?s ?p ?o .
+        FILTER (?p = <http://www.w3.org/ns/ldp#contains>)
+        }"""
     )
     # setup directory for current resource:
     path = directories(g, url, path)
@@ -130,10 +131,12 @@ FILTER (?p = <http://www.w3.org/ns/ldp#contains>)
     # write starting resource
     write_to_disk(g, url, path)
     return g
-    
-# the official LUMC FDP url:
-graph = traverse_fdp(URIRef('https://w3id.org/ejp-rd/fairdatapoints/orphanet-catalog-fdp'))
 
-# write merged graph to turtle file
-graph.serialize(destination="orpha-fdp.ttl", format="turtle")
+def get_resource(url, destination):
+    #FDP url when using /?format=ttl postfix:
+    graph = traverse_fdp()
+    # write merged graph to turtle file
+    graph.serialize(destination=destination, format="turtle")
 
+if __name__ == '__main__':
+    get_resource('https://w3id.org/ejp-rd/fairdatapoints/orphanet-catalog-fdp', "orpha-fdp.ttl")
